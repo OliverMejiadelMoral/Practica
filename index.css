@@ -77,3 +77,10 @@
 	border: none;
 	color: #FFF;
 }
+
+#banner {
+    height: 250px;
+    background: url(/assets/bannermedicos.png);
+    background-position: center;
+    background-size: cover;
+}
