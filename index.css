@@ -59,6 +59,7 @@
 	text-align: center;
     display: flex;
     justify-content: space-between;
+
 }
 
 #menu li {
@@ -77,7 +78,10 @@
 	border: none;
 	color: #FFF;
 }
-
+#menu a:hover{
+	background-color: rgb(25, 41, 141);
+}
+	
 #banner {
     height: 250px;
     background: url(/assets/bannermedicos.png);
