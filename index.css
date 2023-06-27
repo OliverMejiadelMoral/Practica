@@ -37,7 +37,7 @@
 #logoheader {
     width: 300px;
     display: flex;
-    align-items: center;
+    align-items: center ;
 }
 
 /* MENU */
@@ -57,6 +57,8 @@
 	list-style: none;
 	line-height: normal;
 	text-align: center;
+    display: flex;
+    justify-content: space-between;
 }
 
 #menu li {
@@ -69,8 +71,8 @@
 	padding: 0px 40px;
 	text-decoration: none;
 	text-align: center;
-	text-transform: uppercase;
-	font-size: 0.80em;
+  	text-transform: uppercase;
+	font-size: 15px ;
 	line-height: 100px;
 	border: none;
 	color: #FFF;
