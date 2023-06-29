@@ -1,20 +1,17 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 .header {
-  
-	overflow: hidden;
-	background-size: 100%;
-	padding: 2em 0em 2em 0em;
-	background: #2b3d4e;
+    overflow: hidden;
+    background-size: 100%;
+    padding: 2em 0em 2em 0em;
+    background: #2b3d4e;
     display: flex;
     align-items: center;
-    
 }
-
 
 .body {
     font-family: Arial, Helvetica, sans-serif;
@@ -23,68 +20,87 @@
 .logo {
     width: auto;
     height: auto;
-    margin:  auto;
-    padding: 10px ;
+    margin: auto;
+    padding: 10px;
     display: flex;
     align-items: center;
 }
 
 .container {
-	width: 1200px;
-	margin: 0px auto;
+    width: 69.18vw; /* Proporción áurea: 1200px / 1920px * 100 */
+    margin: 0px auto;
 }
 
 #logoheader {
-    width: 300px;
+    width: 15.62vw; /* Proporción áurea: 300px / 1920px * 100 */
     display: flex;
-    align-items: center ;
+    align-items: center;
 }
 
 /* MENU */
 
-#menu-wrapper{
-	background: #5067a8;
+#menu-wrapper {
+    background: #5067a8;
 }
 
 #menu {
-	overflow: hidden;
-	height: 100px;
+    overflow: hidden;
+    height: 7.72vw; /* Proporción áurea: 100px / 1920px * 100 */
 }
 
 #menu ul {
-	margin: 0;
-	padding: 0px 0px 0px 0px;
-	list-style: none;
-	line-height: normal;
-	text-align: center;
+    margin: 0;
+    padding: 0px 0px 0px 0px;
+    list-style: none;
+    line-height: normal;
+    text-align: center;
     display: flex;
     justify-content: space-between;
-
 }
 
 #menu li {
-	display: inline-block;
+    display: inline-block;
 }
 
 #menu a {
-	display: block;
-	letter-spacing: 1px;
-	padding: 0px 40px;
-	text-decoration: none;
-	text-align: center;
-  	text-transform: uppercase;
-	font-size: 15px ;
-	line-height: 100px;
-	border: none;
-	color: #FFF;
+    display: block;
+    letter-spacing: 1px;
+    padding: 0px 2.08vw; /* Proporción áurea: 40px / 1920px * 100 */
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.78vw; /* Proporción áurea: 15px / 1920px * 100 */
+    line-height: 7.72vw; /* Proporción áurea: 100px / 1920px * 100 */
+    border: none;
+    color: #FFF;
 }
-#menu a:hover{
-	background-color: rgb(25, 41, 141);
+
+#menu a:hover {
+    background-color: rgb(25, 41, 141);
 }
-	
+
 #banner {
-    height: 250px;
+    height: 13.02vw; /* Proporción áurea: 250px / 1920px * 100 */
     background: url(/assets/bannermedicos.png);
     background-position: center;
     background-size: cover;
+}
+
+/* MAIN */
+
+.container {
+}
+
+.container h2{
+	text-align: center;
+	color: black;
+	font-size: 50px;
+	padding: 100px 50px 20px;
+}
+
+.container p{
+    padding: 40px;
+    text-align: justify;
+    display: block; 
+    font-size: larger;
 }
