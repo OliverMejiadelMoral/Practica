@@ -45,6 +45,7 @@
 
 #menu-wrapper {
     background: #1F6E8C;
+    padding: 0 0 15px 0;
 }
 
 #menu {
@@ -82,7 +83,6 @@
 #menu a:hover {
     background-color: rgb(25, 41, 141, .5);
     transition: .8s;
-    border-radius: 28px ;
 }
 
 #banner {
@@ -94,7 +94,7 @@
 
 /* MAIN */
 
-.servicios{
+.title{
     text-align: center;
     padding: 100px 0 100px 0 ;
     color: white
@@ -104,9 +104,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .card{
+    flex: 0 1 calc(50% - 20px);
+    margin-bottom: 20px;
     margin: auto;
     width: 500px;
     height: 300px;
@@ -140,3 +144,115 @@
     opacity: 1;
 }
 
+/* ABOUT US */
+
+.container__cards{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position:absolute;
+  }
+
+.cards{
+    width: 390px;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.494);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    border-left: 2px solid rgba(255, 255, 255, 0.5);
+    border-top: 2px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.cards:hover{
+    transform: translateY(-10px);
+    transition: all 600ms;
+}
+
+.cards:hover .cover__card img{
+    transform: scale(1.1);
+}
+
+.cover__card{
+    width: 100%;
+    height: 280px;
+    border-radius: 50px;
+    overflow-wrap: hidden;
+}
+
+.cover__card img{
+    width: 90%;
+    transition: all 600ms;
+    border-radius: 35px;
+}
+
+.cards h2{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 20px;
+    color: white;
+}
+
+.cards p{
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 300;
+    color: white;
+    letter-spacing: .5px;
+}
+
+.cards hr{
+    margin-top: 30px;
+    border: none;
+    height: 0.7px;
+    background: rgb(91, 91, 144);
+}
+
+.footer_card {
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+
+/* RESPONSIVE MEDIA */
+
+@media only screen and (max-width: 767px) {
+    .container {
+        width: 90%; 
+    }
+
+    #logoheader {
+        width: 100%; 
+        display: flex;
+        justify-content: center; 
+    }
+
+    #menu {
+        height: auto; 
+    }
+
+    #menu ul {
+        flex-direction: column; 
+    }
+
+    #menu li {
+        margin-bottom: 10px; 
+    }
+
+    #menu a {
+        padding: 10px 0; 
+        font-size: 16px; 
+    }
+
+    .servicios {
+        padding: 50px 0;
+    }
+
+    .card {
+        flex: 0 1 calc(100% - 40px); 
+    }
+}
