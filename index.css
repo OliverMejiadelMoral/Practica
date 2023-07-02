@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .header {
@@ -14,7 +17,8 @@
 }
 
 .body {
-    font-family: Arial, Helvetica, sans-serif;
+   background-color: #1F6E8C;
+
 }
 
 .logo {
@@ -37,10 +41,10 @@
     align-items: center;
 }
 
-/* MENU */
+/* MENU color anterior #5067a8 */ 
 
 #menu-wrapper {
-    background: #5067a8;
+    background: #1F6E8C;
 }
 
 #menu {
@@ -76,7 +80,9 @@
 }
 
 #menu a:hover {
-    background-color: rgb(25, 41, 141);
+    background-color: rgb(25, 41, 141, .5);
+    transition: .8s;
+    border-radius: 28px ;
 }
 
 #banner {
@@ -88,19 +94,49 @@
 
 /* MAIN */
 
-.container {
+.servicios{
+    text-align: center;
+    padding: 100px 0 100px 0 ;
+    color: white
 }
 
-.container h2{
-	text-align: center;
-	color: black;
-	font-size: 50px;
-	padding: 100px 50px 20px;
+.cardsmain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.container p{
-    padding: 40px;
-    text-align: justify;
-    display: block; 
-    font-size: larger;
+.card{
+    margin: auto;
+    width: 500px;
+    height: 300px;
+    border-radius: 12px;
+    background: var(--i);
+    background-size: cover;
+    box-shadow: 12px 7px 7px rgba(3, 32, 51, .8);
+    overflow: hidden;
 }
+
+.content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, .7);
+    opacity: 0;
+    transition: .7s;
+}
+
+.content h2, a{
+    color: rgba(255, 255, 255, .8);
+    margin: 20px 0;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.card:hover .content{
+    opacity: 1;
+}
+
