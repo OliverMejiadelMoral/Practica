@@ -31,17 +31,17 @@
 }
 
 .container {
-    width: 69.18vw; /* Proporción áurea: 1200px / 1920px * 100 */
+    width: 69.18vw; 
     margin: 0px auto;
 }
 
 #logoheader {
-    width: 15.62vw; /* Proporción áurea: 300px / 1920px * 100 */
+    width: 15.62vw; 
     display: flex;
     align-items: center;
 }
 
-/* MENU color anterior #5067a8 */ 
+/* MENU */
 
 #menu-wrapper {
     background: #1F6E8C;
@@ -50,7 +50,7 @@
 
 #menu {
     overflow: hidden;
-    height: 7.72vw; /* Proporción áurea: 100px / 1920px * 100 */
+    height: 7.72vw; 
 }
 
 #menu ul {
@@ -70,12 +70,12 @@
 #menu a {
     display: block;
     letter-spacing: 1px;
-    padding: 0px 2.08vw; /* Proporción áurea: 40px / 1920px * 100 */
+    padding: 0px 2.08vw;
     text-decoration: none;
     text-align: center;
     text-transform: uppercase;
-    font-size: 0.78vw; /* Proporción áurea: 15px / 1920px * 100 */
-    line-height: 7.72vw; /* Proporción áurea: 100px / 1920px * 100 */
+    font-size: 0.78vw; 
+    line-height: 7.72vw; 
     border: none;
     color: #FFF;
 }
@@ -85,8 +85,10 @@
     transition: .8s;
 }
 
+/* BANNER */
+
 #banner {
-    height: 13.02vw; /* Proporción áurea: 250px / 1920px * 100 */
+    height: 13.02vw; 
     background: url(/assets/bannermedicos.png);
     background-position: center;
     background-size: cover;
@@ -152,7 +154,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    position:absolute;
   }
 
 .cards{
@@ -217,42 +218,126 @@
     font-weight: 500;
 }
 
+/* FOOTER */
+
+.footer{
+    background-color: #242628;
+    padding: 80px 0;
+}
+
+.container_footer{
+    max-width: 200px;
+    margin: 0 auto;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-links{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-links h4{
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid turquoise;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.footer-links ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #888888;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3 ease;
+}
+
+.social-link a{
+    font-size: larger;
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    text-align: center;
+}
 
 /* RESPONSIVE MEDIA */
 
 @media only screen and (max-width: 767px) {
     .container {
-        width: 90%; 
+        width: 90%;
+    }
+
+    .header {
+        padding: 1em 0;
+    }
+
+    .logo {
+        margin: 0;
     }
 
     #logoheader {
-        width: 100%; 
+        width: 100%;
         display: flex;
-        justify-content: center; 
-    }
-
-    #menu {
-        height: auto; 
+        justify-content: center;
     }
 
     #menu ul {
-        flex-direction: column; 
+        flex-direction: column;
     }
 
     #menu li {
-        margin-bottom: 10px; 
+        margin-bottom: 10px;
     }
 
     #menu a {
-        padding: 10px 0; 
-        font-size: 16px; 
+        padding: 10px 0;
+        font-size: 16px;
     }
 
-    .servicios {
+    .title {
         padding: 50px 0;
     }
 
+    .cardsmain {
+        gap: 10px;
+    }
+
     .card {
-        flex: 0 1 calc(100% - 40px); 
+        flex: 0 1 calc(100% - 20px);
+        width: 100%;
+        height: 200px;
+        margin: 10px 0;
+    }
+
+    .card:hover .content {
+        opacity: 1;
+    }
+
+    .container__cards {
+        justify-content: center;
+    }
+
+    .cards {
+        width: 80%;
+    }
+
+    .footer-links {
+        width: 100%;
+        padding: 15px;
     }
 }
