@@ -278,6 +278,27 @@
 /* RESPONSIVE MEDIA */
 
 @media only screen and (max-width: 767px) {
+    
+
+    
+    #menu-wrapper {
+        padding: 0;
+
+      }
+    
+      #menu ul {
+        flex-direction: column;
+      }
+    
+      #menu li {
+        margin-bottom: 10px;
+      }
+    
+      #menu a {
+        padding: 10px 0;
+        font-size: 16px;
+      }
+    
     .container {
         width: 90%;
     }
@@ -340,4 +361,30 @@
         width: 100%;
         padding: 15px;
     }
+    
+    .input-container {
+        display: flex;
+        align-items: center;
+      }
+      
+      .input-container input {
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      
+      .input-container button {
+        margin-left: 10px;
+        padding: 8px 16px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      
+      .input-container button:hover {
+        background-color: #45a049;
+      }
+      
 }
